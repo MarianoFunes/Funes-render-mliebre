@@ -1,0 +1,379 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+   background-color: #ebebeb;
+
+}
+
+/* HEADER */ 
+header {
+  background-color: #EAC926;
+}
+
+
+
+.barra-logo {
+
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+
+
+}
+
+.barra-logo p, .barra-logo img, .barra-logo form {
+  flex-basis: 30%;
+  
+}
+
+.barra-logo img {
+ max-width: 35%;
+  
+}
+
+
+
+.imagen-banner {
+  width: 100vw;
+}
+
+ .barra-busqueda {
+    
+  background-color: white;
+  width: 45%;
+  color: rgb (0, 0, 0);
+  font-size: 15px;
+
+ }
+
+ .barra-busqueda p {
+opacity: 0.3;
+ }
+
+ nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 6px;
+ }
+
+
+ nav ul {
+  list-style: none;
+  display: none;
+  
+ }
+
+ 
+
+
+
+.burger-menu {
+    text-align: center;
+  
+}
+
+.burger-menu i {
+
+  font-size: 2em;
+  background-color: #1259c3;
+  color: white;
+  padding: 12PX;
+  margin-bottom: 12px;
+  border-radius: 15%;
+}
+
+/* FIN HEADER */
+
+/*CUERPO */ 
+
+/*CARD*/ 
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+ 
+}
+
+
+
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+ justify-content: space-around;
+}
+
+.full-card {
+display: flex;
+flex-direction: column;
+width: 300px;
+text-align: center;
+gap: 10px;
+margin-top: 15px;
+box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.full-card:hover{
+  box-shadow: 20px 20px 30px rgb(100, 100, 100);
+  width: 320px;
+  transition: 0.9s; 
+}
+
+.card-price-disc {
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+  
+}
+
+
+.full-card img {
+  width: 100%;
+ 
+}
+
+
+.full-card  i {
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(12, 176, 22);
+  border-radius: 50%;
+  color: rgb(12, 176, 22);
+
+ transition: all 1s;
+}
+
+.full-card:hover i {
+  transform: rotate(-90deg);
+  
+}
+
+
+
+
+.card-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 45%;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.discount, .description {
+font-size: 16px;
+}
+
+.discount {
+  color: rgb(22, 176, 22);
+}
+
+.description {
+  display: none;
+}
+
+.price, .discount, .description{
+  margin-left: 6px;
+}
+
+
+/* FIN CARD*/
+
+
+
+
+/* FIN CUERPO */
+
+/* FOOTER */ 
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
+  
+ 
+}
+
+footer i {
+  background-color:white;
+  color: #1259c3;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 2em;
+  
+}
+
+footer li {
+  list-style: none;
+}
+
+
+/* FIN FOOTER */
+
+/*TABLET */ 
+
+@media (min-width: 361px) {
+  /*tablets*/
+ /* .full-card {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      margin-top: 15px;
+  }*/
+  .description {
+      display: block;
+      
+  }
+
+  .full-card:hover .description {
+    display: none;
+   
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  } 
+
+  nav ul li {
+    margin-left: 5px;
+  }
+
+
+}
+
+/* FIN TABLET */
+
+/*DESKTOP*/
+@media (min-width: 769px) {
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer-flex div {
+    width: 33%;
+  }
+
+  .footer-flex p {
+
+    width: 100%;
+  }
+
+  footer i:hover {
+
+   
+    color: red;
+    transition: .4s;
+
+  }
+
+  
+
+
+     
+  }
+
+ /* FIN DESKTOP*/
+
+/*REGISTRO*/ 
+
+.formregister {
+  padding: 25px;
+}
+
+form div {
+  text-align: center;
+  
+}
+
+form h4 {
+  text-align: center;
+  color: #1259c3;
+  padding: 10px;
+}
+
+.register-choice {
+  display: flex;
+  flex-direction: column;
+  color:#1259c3; 
+ 
+}
+
+.button-form {
+
+  color: white;
+  background-color: #1259c3;
+  transition-property: background-color, color;
+  transition-duration: .7s;
+  
+}
+
+.button-form:hover {
+  background-color: rgb(224, 221, 221);
+  color: black;
+}
+
+
+/*FIN REGISTRO*/
+
+/*LOGIN*/ 
+
+.login { 
+  
+  display: flex;
+  flex-direction: column;
+margin-left: 25%;
+margin-right: 25%;
+  margin-bottom: 30px;
+}
+
+.log  {
+margin: 15px;
+height: 35px;
+
+}
+
+.button-form {
+  height: 35px;
+  margin-left: 32%;
+  margin-right: 32%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+
+/*FIN LOGIN*/
